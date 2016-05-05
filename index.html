@@ -64,12 +64,12 @@
 
     <div class="contact-bar">
       <div class="row">
-        <a target="_blank" href="mailto:me@harsh.io">
+        <a target="_blank" id="email-anchor" href="#">
         <div class="tile col-xs-3 text-center">
           <div class="contact-glyph">
             <span class="fui-mail"></span>
           </div>
-          <p>me@harsh.io</p>
+          <p id="email-text"></p>
         </div>
       </a>
       <a target="_blank" href="http://github.com/poddarh">
@@ -109,5 +109,14 @@
     <script src="dist/js/vendor/video.js"></script>
     <script src="dist/js/flat-ui.min.js"></script>
     <script src="docs/assets/js/application.js"></script>
+
+    <script type="text/javascript">
+		var username = "me";
+		var hostname = "harsh.io";
+		var linktext = username + "@" + hostname ;
+		document.getElementById("email-anchor").href = "mail" + "to:" + linktext ;
+		document.getElementById("email-text").innerHTML = linktext ;
+	</script>
+</script>
   </body>
 </html>
